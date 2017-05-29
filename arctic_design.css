@@ -11,14 +11,19 @@ body {
   margin: __body_margin__;
   line-height: __line_height__;
   background: __body_background__;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), color-stop(1, #555555));
+  background-image: -moz-linear-gradient(center top, #f9f9f9 0%, #555555 100%);
+  background-image: -o-linear-gradient(top, #f9f9f9 0%, #555555 100%);
+  background-image: -ms-linear-gradient(top, #f9f9f9 0%, #555555 100%);
 }
 
 div#wrapper {
   margin: auto;
   width: __wiki_width__;
   border: 1px solid __border__;
-  background: __background__;
+  background: __background_alt__;
   padding: __page_padding__;
+  box-shadow: gray 0 10px 10px 1px;
 }
 div#wrapper.media {
   width: __wiki_full_width__;

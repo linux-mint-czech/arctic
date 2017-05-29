@@ -9,17 +9,23 @@ div.dokuwiki .header {
   border: 1px solid __border__;
   background-color: __header_background__;
   margin-bottom: 0.2em;
+  padding: 0;
 }
 
 div.dokuwiki .pagename {
   margin: 0.2em;
   font-size: 130%;
   color: __lightgray__;
+  display: none;
 }
 
 div.dokuwiki .logo {
-  margin: 0.2em;
+  margin: 0;
   font-size: 130%;
+  background-image: url(/lib/images/logolm.png);
+  height: 110px;
+  font-size: 0px;
+  float: none;
 }
 
 div.dokuwiki .pagename a {
