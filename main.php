@@ -39,6 +39,15 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
 
+  <!--<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39944089-3', 'linux-mint-czech.cz');
+    ga('send', 'pageview');
+  </script>-->
 </head>
 <body>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>

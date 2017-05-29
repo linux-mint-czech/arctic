@@ -6,19 +6,23 @@
 
 /* ----- General Elements ----- */
 body {
-  font: __font_size__ Verdana, "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  font: __font_size__ Verdana, "Titillium Web", Lucida, Helvetica, Arial, sans-serif;
   color: __text__;
-  margin: __body_margin__;
   line-height: __line_height__;
-  background: __body_background__;
+  background: url(/lib/images/bg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), color-stop(1, #555555));
+  background-image: -moz-linear-gradient(center top, #f9f9f9 0%, #555555 100%);
+  background-image: -o-linear-gradient(top, #f9f9f9 0%, #555555 100%);
+  background-image: -ms-linear-gradient(top, #f9f9f9 0%, #555555 100%);
 }
 
 div#wrapper {
   margin: auto;
-  width: __wiki_width__;
-  border: 1px solid __border__;
-  background: __background__;
-  padding: __page_padding__;
+  width: 1130px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #eff3db;
+  box-shadow: gray 0 10px 10px 1px;
 }
 div#wrapper.media {
   width: __wiki_full_width__;
@@ -26,14 +30,14 @@ div#wrapper.media {
 
 div.dokuwiki div.left_sidebar {
   float: left;
-  width: 22%;
+  width: 15%;
   padding: 0.2em 0.5em 0 0;
   border-right: 1px solid  __border__;
 }
 
 div.dokuwiki div.right_sidebar {
   float: right;
-  width: 22%;
+  width: 15%;
   padding: 0.2em 0em 0 0.5em;
   border-left: 1px solid __border__;
 }
@@ -47,9 +51,10 @@ div.dokuwiki div.left_page,
 div.dokuwiki div.right_page {
   text-align: justify;
   float: left;
-  width: 72% !important;
+  width: 78% !important;
   width: 69%;
-  padding: 2%;
+  padding-top: 1%;
+  padding-left: 4%;
 }
 
 div.dokuwiki div.center_page {
@@ -62,9 +67,9 @@ div.dokuwiki div.center_page {
 }
 
 div.footerinc {
-  border: 1px solid __border__;
-  background-color: __footer_background__;
+  background-color: #fff;
   margin-top: 0.5em;
+  padding-top: 15px;
 }
 
 div.dokuwiki .footerinc a img {
@@ -103,7 +108,7 @@ div.dokuwiki div.right_sidebar h4,
 div.dokuwiki div.right_sidebar h5,
 div.dokuwiki div.right_sidebar h6 {
   font-size: 100%;
-  font-family: Verdana, "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  font-family: Verdana, "Titillium Web", Lucida, Helvetica, Arial, sans-serif;
   font-weight: bold;
   padding: 0.1em;
   border: none;
@@ -112,7 +117,7 @@ div.dokuwiki div.right_sidebar h6 {
 
 div.dokuwiki div.left_sidebar h1,
 div.dokuwiki div.right_sidebar h1 {
-  background: __background_alt__;
+  background: #eff3db;
   padding-left: 0.2em;
 }
 
@@ -136,6 +141,7 @@ div.dokuwiki div.right_sidebar ul {
 div.dokuwiki div.sidebar_box {
   border: 1px solid __border__;
   margin-bottom: 0.2em;
+  margin-left: 7px;
   padding: 0.3em;
   overflow: hidden;
 }
@@ -150,7 +156,7 @@ div.dokuwiki h1 a {
 }
 
 div.dokuwiki a.action {
-  color: __extern__;
+  color: #f3f3f3;
 }
 
 div.dokuwiki .bar a.action {
@@ -235,6 +241,7 @@ div.dokuwiki input.missing {
 div.dokuwiki div.left_sidebar form#dw__search,
 div.dokuwiki div.right_sidebar form#dw__search {
   margin-bottom: 0.2em;
+  margin-left: 15px;
   display: block;
   font-size: 100%;
 }
